@@ -1,0 +1,22 @@
+.TodoListWrapper {
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+.TodoItem {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+    .TodoListWrapper {
+        padding: 10px;
+    }
+
+    .TodoItem {
+        padding: 5px 0;
+    }
+}
