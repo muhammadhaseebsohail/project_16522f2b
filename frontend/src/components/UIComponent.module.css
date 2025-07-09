@@ -1,0 +1,54 @@
+.UIComponent__container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+.UIComponent__title {
+  font-size: 2.5em;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.UIComponent__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.UIComponent__item {
+  margin: 10px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  flex: 1 1 200px;
+  text-align: center;
+}
+
+.UIComponent__loading,
+.UIComponent__error {
+  font-size: 1.5em;
+  color: #333;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.UIComponent__error {
+  color: red;
+}
+
+@media (max-width: 768px) {
+  .UIComponent__title {
+    font-size: 2em;
+  }
+
+  .UIComponent__content {
+    flex-direction: column;
+  }
+
+  .UIComponent__item {
+    flex: 1 1 100%;
+    margin: 10px 0;
+  }
+}
