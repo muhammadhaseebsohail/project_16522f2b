@@ -1,0 +1,47 @@
+.Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+}
+
+.Container__Title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.Container__Button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.Container__Button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .Container {
+        padding: 10px;
+    }
+
+    .Container__Title {
+        font-size: 18px;
+    }
+
+    .Container__Button {
+        padding: 8px 16px;
+    }
+}
