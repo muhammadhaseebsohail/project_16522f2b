@@ -1,0 +1,46 @@
+.FormWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 300px;
+  margin: auto;
+}
+
+.FormWrapper__input {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.FormWrapper__button {
+  padding: 10px;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease;
+}
+
+.FormWrapper__button:hover {
+  background-color: darkblue;
+}
+
+.FormWrapper__errorMessage {
+  color: red;
+}
+
+.FormWrapper__loadingMessage {
+  color: green;
+}
+
+@media screen and (max-width: 768px) {
+  .FormWrapper {
+    width: 90%;
+  }
+  .FormWrapper__input {
+    font-size: 14px;
+  }
+}
