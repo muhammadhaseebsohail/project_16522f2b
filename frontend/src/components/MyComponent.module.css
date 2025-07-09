@@ -1,0 +1,34 @@
+.MyComponent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.MyComponent__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.MyComponent__item {
+  flex-basis: 100%;
+  margin: 10px;
+  padding: 20px;
+  background-color: lightgray;
+  border-radius: 5px;
+  text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+  .MyComponent__item {
+    flex-basis: 45%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .MyComponent__item {
+    flex-basis: 30%;
+  }
+}
